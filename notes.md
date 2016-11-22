@@ -219,70 +219,69 @@ npm init
     - 本地安装
         - 开发依赖(开发的时候使用，上线后不需要)
         ```
-         npm install gulp --save-dev
+        npm install gulp --save-dev
         ```
         - 发布依赖(开发时候用，上线时仍需要)
         ```
          npm install jquery --save
         ```
     - 通过package.json来安装所需的依赖
-        ```
-        npm install
-        ```
-       > 默认安装到当前目录下的node_modules文件夹下
+    ```
+    npm install
+    ```
+    > 默认安装到当前目录下的node_modules文件夹下
     
-    - 全局安装(安装后可以在命令行下使用，比如gulp，默认安装到c盘下，不是所有文件都能全局安装的)
-        安装后可以在命令行下使用
-        ```
-           npm install gulp -g
-        ```
-        > 全局安装不会安装到自己的文件夹中，查看全局安装的路径 npm root -g
+    - 全局安装(安装后可以在命令行下使用，比如gulp，默认安装到c盘下，不是所有文件都能全局安装的) 安装后可以在命令行下使用
+    ```
+    npm install gulp -g
+    ```
+    > 全局安装不会安装到自己的文件夹中，查看全局安装的路径 npm root -g
 - 卸载
     - 本地的卸载
-        ```
-        npm uninstall gulp --save-dev
-        ```
-        ```
-        npm uninstall gulp --save 
-        ```
+    ```
+    npm uninstall gulp --save-dev
+    ```
+    ```
+    npm uninstall gulp --save 
+    ```
     > --save-dev加上这个 在package.json也进行记录的删除
     - 全局卸载
-        ```
-        npm uninstall gulp -g
-        ```
+    ```
+    npm uninstall gulp -g
+    ```
     - 查看全局的安装路径
-        ```
-        npm root -g
-        ```
+    ```
+    npm root -g
+    ```
 - 发布第三方包
     - 我们写好一个包，发布到npm上，包里必须要有package.json文件 
-        ```
-        npm init -y
-        ```
-     - 写一个包的入口文件 index.js
-     - 确保源在npm上 查看源 nrm ls
-     - 添加用户 (如果有表示已经登录)
-         ```
-         npm adduser
-         ```
-     > 查看用户名 npm whoami  
-     - 发布
-         ```
-         npm publish
-         ```
-     - 卸载发布
-         ```
-         npm unpublish --force
-         ```
+    ```
+    npm init -y
+    ```
+    - 写一个包的入口文件 index.js
+    - 确保源在npm上 查看源 nrm ls
+    - 添加用户 (如果有表示已经登录)
+    ```
+    npm adduser
+    ```
+    > 查看用户名 npm whoami  
+    - 发布
+    ```
+    npm publish
+    ```
+    - 卸载发布
+     ```
+     npm unpublish --force
+     ```
 - 下载第三方包
     - 下载
-        ```
-        npm install 包名 --save
-        ```
+    ```
+    npm install 包名 --save
+    ```
     - 引用第三方包 node_module必须在同级或者上级才能找到 会默认执行package.json文件中main指定的文件
-        ```
-        require(引用包的名字)
-        ```
+    ```
+    require(引用包的名字)
+    ```
     > 引用第三方别人发布上去的包 会自动在当前目录下node_moules下找对应的package.js文件中对用的main文件，默认是index.js，如果找不到，会向上一级找跟目录 找不到则报错
 - 核心模块
     - 不用下载直接引用 http url fs path util 等
@@ -291,47 +290,46 @@ npm init
 ## 源npm 切换源切换到国内
 - cnpm taobao 
 - 安装nrm工具，想在命令行下切换源
-    ```
-    npm install -g nrm
-    ```
+```
+npm install -g nrm
+```
 - 显示所有源
-    ```
-    nrm ls
-    ```
+```
+nrm ls
+```
 - 添加源
-    ```
-    nrm add zhufeng http://172.18.0.199
-    ```
+```
+nrm add zhufeng http://172.18.0.199
+```
 - 切换源
-    ```
-    nrm use zhufeng
-    ``` 
+```
+nrm use zhufeng
+``` 
 - 查看源网速
-    ```
-    nrm test
-    ```
-
+```
+nrm test
+```
 ## 安装nodeppt
 ```
 npm install -g nodeppt
 ```
 - 创建一个.md文件
 - 开始写ppt
-    ```
-    [slide]
-    ##1
-    [slide]
-    ##2
-    [slide]
-    ##3
-    ```
-    > 必须采用markdown格式
+```
+[slide]
+##1
+[slide]
+##2
+[slide]
+##3
+```
+> 必须采用markdown格式
 - 命令行执行
-    ```
-    nodeppt start
-    ```
+```
+nodeppt start
+```
 - 如果端口被占用重新指定端口
-    ```
-    nodeppt start -p 3000
-    ```
-    > 使用文档 https://github.com/ksky521/nodePPT
+```
+nodeppt start -p 3000
+```
+> 使用文档 https://github.com/ksky521/nodePPT

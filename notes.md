@@ -154,7 +154,7 @@ git push origin master
 - 为了防止在pull时拉取线上代码，覆盖掉本地内容，所以先要将本地的代码进行提交
 - 在取拉取文件，拉取线上代码发现和本地冲突，此时不能自动合并，需要手动合并
 
-> 修复冲突需要修改文件中=====<<<<<>>>> 将此类符号删掉保留想要的内容即可
+> 修复冲突需要修改文件中=====<<<<>>>> 将此类符号删掉保留想要的内容即可
 
 ## gh-pages
 (如果把代码提交到这个分支上，guthub会给你个地址可以直接访问这个项目)
@@ -176,7 +176,7 @@ git checkout gh-pages
 ```
 git branch -d gh-pages
 ```
-   > 删除该master命令： rm -rf .git
+> 删除该master命令： rm -rf .git
 ## 查看分支
 ```
 git branch
@@ -190,7 +190,7 @@ git push origin gh-pages
 ```
 git merge gh-pages
 ```
-   > 一般情况下我们会将开发的内容建立一个开发分支将代码提交到开发分支上上线的时候合并到master分支，最后删除我们开发的分支即可
+> 一般情况下我们会将开发的内容建立一个开发分支将代码提交到开发分支上上线的时候合并到master分支，最后删除我们开发的分支即可
 
 ##
 ##2016-11-20
@@ -239,51 +239,51 @@ npm init
         > 全局安装不会安装到自己的文件夹中，查看全局安装的路径 npm root -g
 - 卸载
     - 本地的卸载
-    ```
-    npm uninstall gulp --save-dev
-    ```
-    ```
-    npm uninstall gulp --save 
-    ```
+        ```
+        npm uninstall gulp --save-dev
+        ```
+        ```
+        npm uninstall gulp --save 
+        ```
     > --save-dev加上这个 在package.json也进行记录的删除
     - 全局卸载
-    ```
-    npm uninstall gulp -g
-    ```
+        ```
+        npm uninstall gulp -g
+        ```
     - 查看全局的安装路径
-    ```
-    npm root -g
-    ```
+        ```
+        npm root -g
+        ```
 - 发布第三方包
     - 我们写好一个包，发布到npm上，包里必须要有package.json文件 
-    ```
-    npm init -y
-    ```
+        ```
+        npm init -y
+        ```
      - 写一个包的入口文件 index.js
      - 确保源在npm上 查看源 nrm ls
      - 添加用户 (如果有表示已经登录)
-     ```
-     npm adduser
-     ```
-     >查看用户名 npm whoami  
+         ```
+         npm adduser
+         ```
+     > 查看用户名 npm whoami  
      - 发布
-     ```
-     npm publish
-     ```
+         ```
+         npm publish
+         ```
      - 卸载发布
-     ```
-     npm unpublish --force
-     ```
+         ```
+         npm unpublish --force
+         ```
 - 下载第三方包
     - 下载
-    ```
-    npm install 包名 --save
-    ```
+        ```
+        npm install 包名 --save
+        ```
     - 引用第三方包 node_module必须在同级或者上级才能找到 会默认执行package.json文件中main指定的文件
-    ```
-    require(引用包的名字)
-    ```
-    >引用第三方别人发布上去的包 会自动在当前目录下node_moules下找对应的package.js文件中对用的main文件，默认是index.js，如果找不到，会向上一级找跟目录 找不到则报错
+        ```
+        require(引用包的名字)
+        ```
+    > 引用第三方别人发布上去的包 会自动在当前目录下node_moules下找对应的package.js文件中对用的main文件，默认是index.js，如果找不到，会向上一级找跟目录 找不到则报错
 - 核心模块
     - 不用下载直接引用 http url fs path util 等
         - util中有一个继承的方法
@@ -325,7 +325,7 @@ npm install -g nodeppt
     [slide]
     ##3
     ```
-    >必须采用markdown格式
+    > 必须采用markdown格式
 - 命令行执行
     ```
     nodeppt start

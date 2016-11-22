@@ -176,7 +176,7 @@ git checkout gh-pages
 ```
 git branch -d gh-pages
 ```
->删除该master命令： rm -rf .git
+   > 删除该master命令： rm -rf .git
 ## 查看分支
 ```
 git branch
@@ -190,8 +190,7 @@ git push origin gh-pages
 ```
 git merge gh-pages
 ```
-
-> 一般情况下我们会将开发的内容建立一个开发分支将代码提交到开发分支上上线的时候合并到master分支，最后删除我们开发的分支即可
+   > 一般情况下我们会将开发的内容建立一个开发分支将代码提交到开发分支上上线的时候合并到master分支，最后删除我们开发的分支即可
 
 ##
 ##2016-11-20
@@ -246,7 +245,7 @@ npm init
     ```
     npm uninstall gulp --save 
     ```
-    >--save-dev加上这个 在package.json也进行记录的删除
+    > --save-dev加上这个 在package.json也进行记录的删除
     - 全局卸载
     ```
     npm uninstall gulp -g
@@ -292,25 +291,25 @@ npm init
 ## 源npm 切换源切换到国内
 - cnpm taobao 
 - 安装nrm工具，想在命令行下切换源
-```
-npm install -g nrm
-```
+    ```
+    npm install -g nrm
+    ```
 - 显示所有源
-```
-nrm ls
-```
+    ```
+    nrm ls
+    ```
 - 添加源
-```
-nrm add zhufeng http://172.18.0.199
-```
+    ```
+    nrm add zhufeng http://172.18.0.199
+    ```
 - 切换源
-```
-nrm use zhufeng
-``` 
+    ```
+    nrm use zhufeng
+    ``` 
 - 查看源网速
-```
-nrm test
-```
+    ```
+    nrm test
+    ```
 
 ## 安装nodeppt
 ```
@@ -318,21 +317,21 @@ npm install -g nodeppt
 ```
 - 创建一个.md文件
 - 开始写ppt
-```
-[slide]
-##1
-[slide]
-##2
-[slide]
-##3
-```
->必须采用markdown格式
+    ```
+    [slide]
+    ##1
+    [slide]
+    ##2
+    [slide]
+    ##3
+    ```
+    >必须采用markdown格式
 - 命令行执行
-```
-nodeppt start
-```
+    ```
+    nodeppt start
+    ```
 - 如果端口被占用重新指定端口
-```
-nodeppt start -p 3000
-```
-> 使用文档 https://github.com/ksky521/nodePPT
+    ```
+    nodeppt start -p 3000
+    ```
+    > 使用文档 https://github.com/ksky521/nodePPT

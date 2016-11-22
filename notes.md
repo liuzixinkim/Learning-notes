@@ -172,11 +172,14 @@ git branch gh-pages
 git checkout gh-pages
 ```
 ## 删除分支
-切换到其他分支进行删除
+- 切换到其他分支进行删除
 ```
 git branch -d gh-pages
 ```
-> 删除该master命令： rm -rf .git
+- 删除该master主干
+```
+rm -rf .git
+```
 ## 查看分支
 ```
 git branch
@@ -244,7 +247,7 @@ npm init
     ```
     npm uninstall gulp --save 
     ```
-    > --save-dev加上这个 在package.json也进行记录的删除
+    > 加上这个（--save-dev）后 在package.json也进行记录的删除
     - 全局卸载
     ```
     npm uninstall gulp -g
@@ -264,7 +267,10 @@ npm init
     ```
     npm adduser
     ```
-    > 查看用户名 npm whoami  
+    - 查看用户名 
+    ```
+    npm whoami
+    ```
     - 发布
     ```
     npm publish
@@ -323,7 +329,6 @@ npm install -g nodeppt
 [slide]
 ##3
 ```
-> 必须采用markdown格式
 - 命令行执行
 ```
 nodeppt start
